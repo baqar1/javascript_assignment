@@ -1,2 +1,2 @@
 # javascript_assignment
-Online Course
+Online Course for metaverse from panaverse.co
