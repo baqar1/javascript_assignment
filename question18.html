@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 18</title>
+</head>
+<body>
+	<h1>Question 18</h1>
+	<script type="text/javascript">
+		var countries = ['USA','Germany','Italy','Canada','UK'];
+		var countries_alphabatical_order = countries.slice();
+		var countries_reverse_order = countries.slice();
+		var countries_reverse_alphabatical_order = countries.slice();
+		//Print your array in its original order
+		document.write('Part 1: Array is in original order '+countries+'<br>');
+		//Print your array in alphabetical order without modifying the actual list
+		document.write('Part 2: Array is in alphabatical order '+ countries_alphabatical_order.sort()+'<br>');
+		//Show that your array is still in its original order by printing it
+		document.write('Part 3: Array is in original order '+countries+'<br>');
+		//Print your array in reverse alphabetical order without changing the order of the original list
+		countries_reverse_alphabatical_order.sort();
+		document.write('Part 4: Array is in reverse alphabatical order '+countries_reverse_alphabatical_order.reverse()+'<br>');
+		//Show that your array is still in its original order by printing it again
+		document.write('Part 5: Array is in original order '+countries+'<br>');
+		//Reverse the order of your list. Print the array to show that its order has changed
+		document.write('Part 6: Now its order has been changed in reverse order '+countries_reverse_order.reverse()+'<br>');
+		//Reverse the order of your list again. Print the list to show it’s back to its original order
+		document.write('Part 7: it’s back to its original order '+countries+'<br>');
+		//Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed
+		document.write('Part 8: its order has been changed in alphabatical order '+ countries_alphabatical_order.sort()+'<br>');
+		//Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed
+		document.write('Part 9: that its order has changed in reverse alphabatical order '+countries_reverse_alphabatical_order.reverse()+'<br>');
+	</script>
+</body>
+</html>

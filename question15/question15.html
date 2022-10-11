@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 15</title>
+</head>
+<body>
+	<h1>Question 15</h1>
+	<script type="text/javascript">
+		var invite_person = ['Zeeshan','Zain','Rashid'];
+		var message_for_not_inviting = 'Bad news that '+invite_person[0] + ', '+ invite_person[1] +' and ' +invite_person[2]+' are not coming today for dinner';
+		document.write(message_for_not_inviting);
+		var message = ' I would like to invite the dinner in evening. Would you like to  come to join me today?';
+		invite_person.pop();
+		invite_person.pop();
+		invite_person.pop();
+		//now put new invite person
+		invite_person.push('Ali');
+		invite_person.push('Usama');
+		invite_person.push('Khubaib');
+		//var invite_person = ['Ali','Usama','Khubaib'];
+		document.write('<br>Hi, '+invite_person[0]+message+'<br>');
+		document.write('Hi, '+invite_person[1]+message+'<br>');
+		document.write('Hi, '+invite_person[2]+message+'<br>');
+	</script>
+</body>
+</html>

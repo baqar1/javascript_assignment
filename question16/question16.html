@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 16</title>
+</head>
+<body>
+	<h1>Question 16</h1>
+	<script type="text/javascript">
+		var invite_person = ['Zeeshan','Zain','Rashid'];
+		var message_for_not_inviting = 'Bad news that '+invite_person[0] + ', '+ invite_person[1] +' and ' +invite_person[2]+' are not coming today for dinner';
+		document.write(message_for_not_inviting);
+		var message = ' I would like to invite the dinner in evening. Would you like to  come to join me today?';
+		invite_person.pop();
+		invite_person.pop();
+		invite_person.pop();
+		//now put new invite person
+		invite_person.push('Ali');
+		invite_person.push('Usama');
+		invite_person.push('Khubaib');
+		//var invite_person = ['Ali','Usama','Khubaib'];
+		document.write('<br>Hi, '+invite_person[0]+message+'<br>');
+		document.write('Hi, '+invite_person[1]+message+'<br>');
+		document.write('Hi, '+invite_person[2]+message+'<br>');
+		//now question 16 logic start
+		document.write('I found new member to join for dinner ');
+		//add element to start
+		invite_person.unshift('Ramzan');
+		//add element to middle
+		invite_person.splice(2,0,'Adnan');
+		//add element to end 
+		invite_person.push('Fahad');
+		
+		document.write('<br>Hi, '+invite_person[0]+message+'<br>');
+		document.write('Hi, '+invite_person[1]+message+'<br>');
+		document.write('Hi, '+invite_person[2]+message+'<br>');
+		document.write('Hi, '+invite_person[3]+message+'<br>');
+		document.write('Hi, '+invite_person[4]+message+'<br>');
+		document.write('Hi, '+invite_person[5]+message+'<br>');
+
+	</script>
+</body>
+</html>

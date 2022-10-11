@@ -1,0 +1,4 @@
+install node js from below link
+https://nodejs.org/en/
+download and install vs code editor from below link
+https://code.visualstudio.com/

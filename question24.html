@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 24</title>
+</head>
+<body>
+	<h1>Question 24</h1>
+
+	<script type="text/javascript">
+		//test for equality with strings
+		const name = 'baqar';
+		if(name === 'baqar'){
+			document.write('name is correct');
+			document.write('<br>');
+		}
+		else{
+			document.write('name is incorrect');
+		}
+		//test inequality with strings
+		const another_name = 'Ali';
+		if(another_name != 'baqar'){
+			document.write('name is not correct');
+		}
+		else{
+			document.write('name is incorrect');
+		}
+		document.write('<br>');
+
+		//Tests using the lower case function
+		const d = 'Lahore';
+		if(d == 'lahore'){
+			document.write('you compare lahore with Lahore which is wrong');
+		}
+		else if(d.toLowerCase() == 'lahore'){
+			document.write('compare with toLowerCase function ');
+		}
+		else{
+			document.write('no match sorry');
+		}
+		document.write('<br>');
+		// Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+		const marks = 95;
+		if(marks>=90 && marks<=100){
+			document.write('A+');
+		}
+		else if(marks>=80 && marks<=90){
+			documen.write('A');
+		}
+		else if(marks>=70 && marks<=80){
+			documen.write('A');
+		}
+		else{
+			document.write('You are Fail');
+		}
+		document.write('<br>');
+		//Tests using "and" and "or" operators
+		const email = 'baqarcit@gmail.com';
+		const user_name = 'baqar';
+		if(user_name=='baqar'|| email=='baqarcit@gmail.com'){
+			document.write('Welcome to Login page');
+		}
+		else{
+			document.write('Please enter email or name');
+		}
+		document.write('<br>');
+		//Test whether an item is in a array
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		if(fruits.includes("Mango")){
+
+			document.write('Array element is include');
+		}
+		else{
+			document.write('array element not include');
+		}
+		document.write('<br>');
+		//Test whether an item is not in a array
+		if(fruits.includes("Mangos")){
+
+			document.write('Array element is include');
+		}
+		else{
+			document.write('array element not include');
+		}
+		
+
+	</script>
+</body>
+</html>
