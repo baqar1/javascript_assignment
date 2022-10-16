@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 31</title>
+</head>
+<body>
+	<h1>Question 31</h1>
+	
+	<script type="text/javascript">
+		
+
+	var users =['ali','adnan','asad','admin','baqar'];
+	var len = users.length;
+	for(i = 0; i<len; i++){
+			if(users[i]!=''){
+				document.write('Hello ' +users[i]+', thank you for logging in again.<br>');
+			}
+			else{
+				document.write('We need to find some users!');
+			}
+			
+		}
+	
+	for(i = 0; i<len; i++){
+		users.pop();
+		
+		}
+	if(users==''){
+		document.write('We need to find some users!');
+	}
+
+
+
+
+	</script>
+</body>
+</html>
