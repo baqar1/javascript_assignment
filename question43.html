@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 43</title>
+</head>
+<body>
+	<h1>Question 43</h1>
+
+	<script type="text/javascript">
+		function show_magicians(magicians){
+			for(i=0; i<magicians.length; i++){
+				document.write('Magicians Name: '+magicians[i]+'<br>');
+			}
+		}
+		const magicians = ['ali','adnan','hassan','noman','usman'];
+		document.write('Original Array <br> ');
+		show_magicians(magicians);
+		document.write('<br>');
+		document.write('Copy Array with Great <br> ');
+
+		function make_great(magicians){
+			var copy_magician=[];
+			for(i=0; i<magicians.length; i++){
+				copy_magician[i]='Great '+magicians[i];
+				
+				//document.write('Great: '+magicians[i]+'<br>');
+			}
+			return copy_magician;
+		}
+		var new_magicians =make_great(magicians);
+		show_magicians(new_magicians);
+	</script>
+</body>
+</html>

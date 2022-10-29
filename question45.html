@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 45</title>
+</head>
+<body>
+	<h1>Question 45</h1>
+	
+	<script type="text/javascript">
+		function storeCarInfo(manufacturer,model,...optional_arguments){
+			const cars = {
+
+				manufacturer:manufacturer,
+				model:model,
+				options:optional_arguments
+			};
+			return cars;
+		}
+		var carobject = storeCarInfo('Honda','123',color= 'Red',weight='850kg');
+		console.log(carobject);
+		document.write('Manufacturer: '+carobject.manufacturer+' Model: '+carobject.model+' Color '+carobject.options[0]+' Weight: '+carobject.options[1]);
+
+		
+	</script>
+</body>
+</html>

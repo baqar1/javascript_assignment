@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 40</title>
+</head>
+<body>
+	<h1>Question 40</h1>
+	
+
+	<script type="text/javascript">
+		function make_album(name,title){
+			const album = {name:name,title:title};
+			return album;
+
+		}
+		var album_object = make_album('atif aslam','pheli dafa');
+		document.write('Signer Name: '+album_object.name +' Title: ' +album_object.title);
+
+		document.write('<br>Album with track <br>');
+
+		function make_album(name,title,track=0){
+			const album = {
+				name:name,
+				title:title,
+				track:track?track:0,
+			};
+			
+			return album;
+		}
+
+		var album_object = make_album('atif aslam','magical singer');
+		document.write('Signer Name: '+album_object.name +' Title: ' +album_object.title+' Without Track# '+album_object.track+'<br>');
+
+		var album_object = make_album('atif aslam','magical singer',10);
+		document.write('Signer Name: '+album_object.name +' Title: ' +album_object.title+' With Track# '+album_object.track+'<br>');
+	</script>
+</body>
+</html>

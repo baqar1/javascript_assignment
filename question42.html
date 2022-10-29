@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 42</title>
+</head>
+<body>
+	<h1>Question 42</h1>
+	<!-- Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified. -->
+
+	<script type="text/javascript">
+		function show_magicians(magicians){
+			for(i=0; i<magicians.length; i++){
+				document.write('Magicians Name: '+magicians[i]+'<br>');
+			}
+		}
+		var magicians = ['ali','adnan','hassan','noman','usman'];
+		show_magicians(magicians);
+		document.write('<br>');
+		document.write('Add Great in magican name using make_great function<br> ');
+
+		function make_great(magicians){
+			for(i=0; i<magicians.length; i++){
+				magicians[i]='Great '+magicians[i];
+				
+				//document.write('Great: '+magicians[i]+'<br>');
+			}
+			return magicians;
+		}
+		var new_magicians =make_great(magicians);
+		show_magicians(new_magicians);
+	</script>
+</body>
+</html>
